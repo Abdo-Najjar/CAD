@@ -22,6 +22,7 @@ class BackEndController extends Controller
     }
 
 
+
     public function index()
     {
         $rows = $this->model->paginate(10);

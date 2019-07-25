@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\BackEnd;
 
-use App\Front\Application;
-use App\Front\Knowabout;
-use App\Front\Subject;
+use App\front\Application;
+use App\front\Knowabout;
+use App\front\Subject;
 use App\Http\Requests\BackEnd\Applications\StoreRequest;
 use App\Mail\ApplicationReplay;
 

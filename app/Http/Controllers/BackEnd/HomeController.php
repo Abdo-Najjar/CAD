@@ -12,13 +12,6 @@ class HomeController extends Controller
 
 
     public function index(){
-
-
-        if(auth()->user()->status == 0){
-            auth()->logout();
-            return redirect("admin/login")->with("err" , "Your account is disabled") ;
-        }
-
        $rows =  Message::paginate(10);
         return view('back-end.dashboard.home',['rows'=>$rows]);
     }
