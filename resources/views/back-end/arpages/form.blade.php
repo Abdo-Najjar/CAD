@@ -44,7 +44,6 @@
             <h3 class="box-title">@lang('admin.content')
                 <small>@lang('admin.enter'.$modelSingleName.' content')</small>
             </h3>
-
             <!-- /. tools -->
         </div>
         <!-- /.box-header -->

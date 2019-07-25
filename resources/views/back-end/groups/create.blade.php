@@ -7,11 +7,11 @@
         @slot('createForm')
 
             <form action="{{route($modelPluralName.'.store')}}" method="POST">
+
                 @csrf
                 @include('back-end.'.$modelPluralName.'.form')
                 <div class="box-footer">
                     <button type="submit" class="btn btn-primary">@lang('admin.create')</button>
-
                 </div>
 
             </form>

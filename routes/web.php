@@ -31,7 +31,6 @@ Route::namespace('FrontEnd')->prefix('')->group(function () {
     Route::get('/home', ['as' => 'home', 'uses' => 'HomepageController@index']);
     Route::get('/home/{id?}', ['as' => 'front.home', 'uses' => 'HomepageController@home']);
 
-
     Route::get('/subjects/{id?}', ['as' => 'front.subjects', 'uses' => 'HomepageController@subject']);
     Route::get('/registration/{id?}', ['as' => 'front.registrations', 'uses' => 'HomepageController@home']);
     Route::get('/teachers', ['as' => 'front.teachers', 'uses' => 'HomepageController@teachers']);
